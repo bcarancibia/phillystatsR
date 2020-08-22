@@ -1,10 +1,26 @@
 ---
-title: "About this site"
+title: "About this blog"
 description: |
-  Some additional details about the website
+  trust the process
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+# Ben Arancibia
+
+* Bachelor's Degree from the College of William and Mary (where I thought I wanted to be an Economist)
+* Graduate Certificate from VCU (where I thought I wanted to be a GIS Developer)
+* Master's Degree from City University of New York (where I learned how to be a data scientist in the early days of "data science")
+
+## Current State
+
+Data scientist that is passionate about sports analytics and the full data life-cycle
+
+I work at GSK as a data scientist building data science knowledge and capability in an old school stats and programming environment.
+
+
+## Contact
+
+[`@bcarancibia`](https://twitter.com/bcarancibia) 
