@@ -9,6 +9,14 @@ date: 08-22-2020
 output:
   distill::distill_article:
     self_contained: false
+
+categories:
+  - philly
+  - tidyverse
+preview: philly.jpg
+twitter:
+  site: "@bcarancibia"
+  creator: "@bcarancibia"
 ---
 
 ```{r setup, include=FALSE}

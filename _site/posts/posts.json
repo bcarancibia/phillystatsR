@@ -10,9 +10,12 @@
       }
     ],
     "date": "2020-08-22",
-    "categories": [],
-    "preview": {},
-    "last_modified": "2020-08-22T15:03:03-04:00",
+    "categories": [
+      "philly",
+      "tidyverse"
+    ],
+    "preview": "posts/2020-08-22-phillystatsr-number-one/philly.jpg",
+    "last_modified": "2020-08-22T15:34:18-04:00",
     "input_file": {}
   }
 ]
