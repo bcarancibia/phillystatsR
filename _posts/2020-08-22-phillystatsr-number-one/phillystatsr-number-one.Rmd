@@ -1,0 +1,28 @@
+---
+title: "PhillyStatsR Number One"
+description: |
+  Hello world of PhillyStatsR - a weekly data project in R
+author:
+  - name: Ben Arancibia
+    url: 
+date: 08-22-2020
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+Since the pandemic started in March, I have been messing around with sports data because as did everyone, I had a lot of free time at home all of sudden. I started out with the cool [nflscrapR](https://github.com/maksimhorowitz/nflscrapR) and [nflfastr](https://github.com/mrcaseb/nflfastR). I really liked the community on twitter working on this type of data and decided to mess around a bit which can be found [here](https://github.com/bcarancibia/nfl).
+
+There are great packages out there for [NFL Data](https://github.com/mrcaseb/nflfastR), but when I decided to go look at NBA data - there are no great R packages out there like NFL data scrapers. There are some older deprecated packages or packages that are available in Python, but I wanted to focus on R packages. My goal is every week to work on a function and talk about my experience of learning how to scrape NBA data, do NBA data analysis, and then try to create and NBA data scraping package that is similar to nflscrapR or nflfastR.
+
+The other aspect of this is that I want to focus on using `tidyverse`. The `tidyverse` is at the core of the the [R for Data Science](https://r4ds.had.co.nz/) text written by Garrett Grolemund and Hadley Wickham. This book is aimed to be beginner-friendly but also deep enough to empower R experts as well. `tidyverse` is the go to standard for writing R code and I am going to use this as an opportunity to work on my tidyverse skills.
+
+Finally, the last aspect of the project is that any examples I do are going to focus on Philly Sports Teams and with the basketball data, the 76ers. I live in Philly and if you know you know - there is nothing like a Philly sports fan.  
+
+![The Embodiment of Philly Sports Fan](https://pbs.twimg.com/media/Ef9B4fTWAAI1ZHB?format=jpg&name=large)
+
+

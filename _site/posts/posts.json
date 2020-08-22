@@ -1,0 +1,18 @@
+[
+  {
+    "path": "posts/2020-08-22-phillystatsr-number-one/",
+    "title": "PhillyStatsR Number One",
+    "description": "Hello world of PhillyStatsR - a weekly data project in R",
+    "author": [
+      {
+        "name": "Ben Arancibia",
+        "url": {}
+      }
+    ],
+    "date": "2020-08-22",
+    "categories": [],
+    "preview": {},
+    "last_modified": "2020-08-22T15:03:03-04:00",
+    "input_file": {}
+  }
+]
