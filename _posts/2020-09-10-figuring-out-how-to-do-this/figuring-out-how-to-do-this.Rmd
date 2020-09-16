@@ -1,0 +1,28 @@
+---
+title: "Figuring Out how to do this"
+description: |
+  How to solve this problem?
+author:
+  - name: Ben Arancibia
+    url: {}
+date: 09-10-2020
+output:
+  distill::distill_article:
+    self_contained: false
+categories:
+  - philly
+  - tidyverse
+preview: 
+twitter:
+  site: "@bcarancibia"
+  creator: "@bcarancibia"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+Distill is a publication format for scientific and technical writing, native to the web.
+
+Learn more about using Distill at <https://rstudio.github.io/distill>.
+
