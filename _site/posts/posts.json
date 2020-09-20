@@ -1,5 +1,24 @@
 [
   {
+    "path": "posts/2020-09-10-figuring-out-how-to-do-this/",
+    "title": "Figuring Out how to do this",
+    "description": "How to solve this problem?",
+    "author": [
+      {
+        "name": "Ben Arancibia",
+        "url": {}
+      }
+    ],
+    "date": "2020-09-10",
+    "categories": [
+      "philly",
+      "tidyverse"
+    ],
+    "preview": "posts/2020-09-10-figuring-out-how-to-do-this/reticulated_python.png",
+    "last_modified": "2020-09-20T17:43:01-04:00",
+    "input_file": "figuring-out-how-to-do-this.utf8.md"
+  },
+  {
     "path": "posts/2020-08-22-phillystatsr-number-one/",
     "title": "PhillyStatsR Number One",
     "description": "Hello world of PhillyStatsR - a weekly data project in R",

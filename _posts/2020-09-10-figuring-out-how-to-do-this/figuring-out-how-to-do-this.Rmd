@@ -12,17 +12,48 @@ output:
 categories:
   - philly
   - tidyverse
-preview: 
+preview: reticulated_python.png
 twitter:
   site: "@bcarancibia"
   creator: "@bcarancibia"
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_chunk$set(echo = TRUE)
+
 ```
 
-Distill is a publication format for scientific and technical writing, native to the web.
+So I have been trying figure out how best to do create a repeatable process for scraping nba data and use it in Rstats. There are a lot of guides online on how to scrape basketball reference data and that was the initial way I was thinking about this problem. Create a bunch of functions and then from those functions create a package. I started down that path and was able to create a quick scraping script, which was not that difficult. 
 
-Learn more about using Distill at <https://rstudio.github.io/distill>.
+```{r, include = TRUE, error=FALSE}
+library(tidyverse)
+library(rvest)
+library(janitor)
 
+url <- "https://www.basketball-reference.com/leagues/NBA_2019_totals.html"
+stats <- url %>% 
+  read_html() %>% 
+  html_table() %>% 
+  .[[1]]
+
+
+stats <- stats %>% 
+  clean_names() %>%        
+  dplyr::filter(!player=="Player") %>%  
+  mutate_at(vars(-c(player,tm,pos)),as.numeric) %>%
+  mutate_at(vars(-c(player,tm,pos)), funs(replace(., is.na(.), 0))) %>% 
+  as_tibble()
+str(stats)
+
+stats <- stats %>% 
+  group_by(player) %>% 
+  slice(1) %>% 
+  ungroup()
+
+head(stats)
+
+```
+
+
+After looking at this, I saw that basketball reference under their use of data and terms of use. Looking through really quickly, it looks like I should not use this for scraping data frequently or building a set of functions on top of their existing data. As a result, I am going to look at using the NBA API, which does not have existing prebuilt R Libraries to download quickly. Some exist, but they are not maintained well and lack a lot of documentation making them hard to use. This might be a good excuse to try to use [reticulate] (https://rstudio.github.io/reticulate/)
+and try out merging existing python libraries with r functionality. 
