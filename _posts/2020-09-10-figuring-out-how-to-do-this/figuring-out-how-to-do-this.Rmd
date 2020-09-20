@@ -55,5 +55,5 @@ head(stats)
 ```
 
 
-After looking at this, I saw that basketball reference under their use of data and terms of use. Looking through really quickly, it looks like I should not use this for scraping data frequently or building a set of functions on top of their existing data. As a result, I am going to look at using the NBA API, which does not have existing prebuilt R Libraries to download quickly. Some exist, but they are not maintained well and lack a lot of documentation making them hard to use. This might be a good excuse to try to use [reticulate] (https://rstudio.github.io/reticulate/)
+After looking at this, I saw that basketball reference under their use of data and terms of use. Looking through really quickly, it looks like I should not use this for scraping data frequently or building a set of functions on top of their existing data. As a result, I am going to look at using the NBA API, which does not have existing prebuilt R Libraries to download quickly. Some exist, but they are not maintained well and lack a lot of documentation making them hard to use. This might be a good excuse to try to use [Reticulate](https://rstudio.github.io/reticulate/)
 and try out merging existing python libraries with r functionality. 
